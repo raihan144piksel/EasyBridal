@@ -2,4 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="coklat">#AA8F79</color>
+    <color name="biru">#0000EE</color>
 </resources>
