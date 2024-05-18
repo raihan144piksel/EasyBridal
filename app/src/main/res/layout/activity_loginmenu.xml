@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".loginmenu">
+    tools:context=".LoginMenu">
 
     <ImageView
         android:id="@+id/imageView"
@@ -34,11 +34,12 @@
         android:layout_height="wrap_content"
         android:ems="14"
         android:layout_marginTop="14dp"
-        android:inputType="text"
-        android:text="E-mail"
+        android:inputType="textEmailAddress"
+        android:hint="E-mail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints="emailAddress" />
 
     <EditText
         android:id="@+id/password_field"
@@ -46,11 +47,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="14"
-        android:inputType="text"
-        android:text="Password"
+        android:hint="Password"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_field" />
+        app:layout_constraintTop_toBottomOf="@+id/email_field"
+        android:autofillHints="password" />
 
     <Button
         android:id="@+id/logintombol"

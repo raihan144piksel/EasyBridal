@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
-class loginmenu : AppCompatActivity() {
+class LoginMenu : AppCompatActivity() {
 
     private lateinit var daftar: TextView
     private lateinit var logintombol: Button
@@ -25,12 +25,12 @@ class loginmenu : AppCompatActivity() {
         initComponents()
 
         daftar.setOnClickListener {
-            val intent = Intent(this@loginmenu, signupmenu::class.java)
+            val intent = Intent(this@LoginMenu, SignUpMenu::class.java)
             startActivity(intent)
         }
 
         logintombol.setOnClickListener{
-            val intent = Intent(this@loginmenu, MainActivity::class.java)
+            val intent = Intent(this@LoginMenu, HomeMenu::class.java)
             startActivity(intent)
         }
 

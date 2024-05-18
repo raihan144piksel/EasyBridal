@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_vertical"
     android:background="@color/white"
-    tools:context=".loginmenu">
+    tools:context=".LoginMenu">
 
     <ImageView
         android:id="@+id/imageView"
@@ -35,11 +35,12 @@
         android:layout_gravity="center_horizontal"
         android:ems="14"
         android:layout_marginTop="14dp"
-        android:inputType="text"
-        android:text="E-mail"
+        android:inputType="textEmailAddress"
+        android:hint="E-mail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/password_field"
@@ -48,11 +49,12 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
         android:ems="14"
-        android:inputType="text"
-        android:text="Password"
+        android:inputType="textPassword"
+        android:hint="Password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_field" />
+        app:layout_constraintTop_toBottomOf="@+id/email_field"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/repassword_field"
@@ -61,11 +63,12 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
         android:ems="14"
-        android:inputType="text"
-        android:text="Repeat Password"
+        android:inputType="textPassword"
+        android:hint="Repeat Password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_field" />
+        app:layout_constraintTop_toBottomOf="@+id/password_field"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/daftartombol"

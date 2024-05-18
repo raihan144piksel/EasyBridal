@@ -3,13 +3,10 @@ package com.example.easybridal
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class signupmenu : AppCompatActivity() {
+class SignUpMenu : AppCompatActivity() {
 
     private lateinit var daftartombol: Button
 
@@ -25,7 +22,7 @@ class signupmenu : AppCompatActivity() {
         initcomponents()
 
         daftartombol.setOnClickListener {
-            val intent = Intent(this@signupmenu, loginmenu::class.java)
+            val intent = Intent(this@SignUpMenu, LoginMenu::class.java)
             startActivity(intent)
         }
 
