@@ -35,7 +35,7 @@
         android:ems="14"
         android:layout_marginTop="14dp"
         android:inputType="text"
-        android:text="E-mail"
+        android:hint="E-mail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -47,7 +47,7 @@
         android:layout_marginTop="16dp"
         android:ems="14"
         android:inputType="text"
-        android:text="Password"
+        android:hint="Password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_field" />
