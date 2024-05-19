@@ -35,11 +35,11 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        dataBinding = true // Tambahkan baris ini untuk mengaktifkan dataBinding
     }
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
