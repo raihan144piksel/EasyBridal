@@ -1,14 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SearchMenuFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SearchMenuFragment"
+    android:background="@drawable/coklat_gradient">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <Button
+                android:id="@+id/filterbutton"
+                android:layout_width="77dp"
+                android:layout_height="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/searchbar"
+                android:text="Filter"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:padding="0px"
+                android:backgroundTint="#D9D9D9"
+                android:layout_marginHorizontal="15dp"/>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchbar"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/filterbutton"
+                android:background="@drawable/bg_white_rounded"
+                android:padding="0px"
+                android:layout_marginEnd="15dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feed"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_feed"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:listitem="@layout/rv_feed_search"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="9dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vendor"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_vendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/rv_vendor_search"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="8dp"/>
+    </LinearLayout>
 </FrameLayout>
