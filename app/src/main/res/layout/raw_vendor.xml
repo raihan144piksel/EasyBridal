@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="165dp"
-    android:layout_height="113dp"
+    android:layout_height="150dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="10dp"
     android:layout_marginBottom="11dp"
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="BUNDLING FULL PACKAGE PRE+WEDDING"
-            android:textSize="7sp"
+            android:textSize="9sp"
             app:layout_constraintTop_toBottomOf="@id/fotovendor1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toTopOf="@id/namavendor"
@@ -43,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="by Java Bride - Wedding Planner"
-            android:textSize="5sp"
+            android:textSize="7sp"
             app:layout_constraintTop_toBottomOf="@id/titleproduct"
             app:layout_constraintStart_toStartOf="@id/titleproduct"
             />

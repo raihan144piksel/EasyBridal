@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.annotation.ColorRes
 import androidx.recyclerview.widget.RecyclerView
-import com.example.easybridal.databinding.RecyclerViewOrderhistoryBinding
+import com.example.easybridal.databinding.RawOrderhistoryBinding
 
 data class DataOrderHistory(
     val imageResId: Int,
@@ -26,7 +26,7 @@ class OrderHistoryAdapter(private val orderList: List<DataOrderHistory>) :
     RecyclerView.Adapter<OrderHistoryAdapter.OrderHistoryViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OrderHistoryViewHolder {
-        val binding = RecyclerViewOrderhistoryBinding.inflate(
+        val binding = RawOrderhistoryBinding.inflate(
             LayoutInflater.from(parent.context), parent, false
         )
         return OrderHistoryViewHolder(binding)
@@ -39,7 +39,7 @@ class OrderHistoryAdapter(private val orderList: List<DataOrderHistory>) :
 
     override fun getItemCount() = orderList.size
 
-    class OrderHistoryViewHolder(private val binding: RecyclerViewOrderhistoryBinding) :
+    class OrderHistoryViewHolder(private val binding: RawOrderhistoryBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(data: DataOrderHistory) {

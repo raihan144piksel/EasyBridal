@@ -11,7 +11,7 @@ class HomeAdapter (private val postlist : ArrayList<datapost>) : RecyclerView.Ad
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Myviewholder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.recycler_view_home, parent, false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.raw_post, parent, false)
         return  Myviewholder(itemView)
     }
 

@@ -3,14 +3,14 @@ package com.example.easybridal
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.easybridal.databinding.RvFeedSearchBinding
-import com.example.easybridal.databinding.RvVendorSearchBinding
+import com.example.easybridal.databinding.RawGridphotoBinding
+import com.example.easybridal.databinding.RawVendorBinding
 
 class FeedAdapter(private val feedList: List<FeedData>) :
     RecyclerView.Adapter<FeedAdapter.FeedViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FeedViewHolder {
-        val binding = RvFeedSearchBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = RawGridphotoBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return FeedViewHolder(binding)
     }
 
@@ -20,7 +20,7 @@ class FeedAdapter(private val feedList: List<FeedData>) :
 
     override fun getItemCount() = feedList.size
 
-    class FeedViewHolder(private val binding: RvFeedSearchBinding) :
+    class FeedViewHolder(private val binding: RawGridphotoBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(data: FeedData) {
@@ -33,7 +33,7 @@ class VendorAdapter(private val vendorList: List<VendorData>) :
     RecyclerView.Adapter<VendorAdapter.VendorViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VendorViewHolder {
-        val binding = RvVendorSearchBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = RawVendorBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return VendorViewHolder(binding)
     }
 
@@ -43,7 +43,7 @@ class VendorAdapter(private val vendorList: List<VendorData>) :
 
     override fun getItemCount() = vendorList.size
 
-    class VendorViewHolder(private val binding: RvVendorSearchBinding) :
+    class VendorViewHolder(private val binding: RawVendorBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(data: VendorData) {
