@@ -13,6 +13,33 @@
         android:theme="@style/Theme.EasyBridal"
         tools:targetApi="31">
         <activity
+            android:name=".ProviderAccount"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".skAddPaymentMenu"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".SkipPaymentMethod"
+            android:exported="false" />
+        <activity
+            android:name=".CheckoutMenu"
+            android:exported="false" />
+        <activity
+            android:name=".DetailService"
+            android:exported="false" />
+        <activity
+            android:name=".CartMenu"
+            android:exported="false" />
+        <activity
+            android:name=".ChatMenu"
+            android:exported="false" />
+        <activity
             android:name=".HomeMenu"
             android:exported="false" />
         <activity

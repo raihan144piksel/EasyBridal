@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class OrderHistoryFragment : Fragment() {
+class FragmentOrderHistory : Fragment() {
 
     private var param1: String? = null
     private var param2: String? = null
@@ -51,7 +51,7 @@ class OrderHistoryFragment : Fragment() {
 
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            OrderHistoryFragment().apply {
+            FragmentOrderHistory().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

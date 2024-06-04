@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="165dp"
-    android:layout_height="150dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="194dp"
+    android:layout_height="wrap_content"
     app:cardCornerRadius="10dp"
-    android:layout_marginBottom="11dp"
-    android:layout_marginHorizontal="4dp"
+    app:layout_constraintDimensionRatio="3:4"
+    android:layout_marginTop="11dp"
+    android:layout_marginHorizontal="2dp"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -14,38 +16,67 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/fotovendor1"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintBottom_toTopOf="@id/titleproduct"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/abandoned_house_field_wallpaper_1920x1080"
-            android:layout_marginBottom="3.5dp"
+            android:layout_marginBottom="5.8dp"
             />
 
         <TextView
             android:id="@+id/titleproduct"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="BUNDLING FULL PACKAGE PRE+WEDDING"
-            android:textSize="9sp"
+            android:textSize="13sp"
             app:layout_constraintTop_toBottomOf="@id/fotovendor1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toTopOf="@id/namavendor"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
+            android:textAlignment="center"
             />
 
         <TextView
             android:id="@+id/namavendor"
-            android:layout_width="wrap_content"
+            android:layout_width="106dp"
             android:layout_height="wrap_content"
-            android:text="by Java Bride - Wedding Planner"
-            android:textSize="7sp"
+            android:text="Java Bride - Wedding Planner"
+            android:textSize="9sp"
             app:layout_constraintTop_toBottomOf="@id/titleproduct"
             app:layout_constraintStart_toStartOf="@id/titleproduct"
+            android:layout_marginTop="4.2dp"
+            />
+
+        <ImageView
+            android:id="@+id/iconplaceholder"
+            android:layout_width="10dp"
+            android:layout_height="11.52dp"
+            android:src="@drawable/baseline_place_24"
+            app:layout_constraintEnd_toStartOf="@id/lokasi"
+            app:layout_constraintStart_toEndOf="@id/namavendor"
+            app:layout_constraintTop_toTopOf="@id/lokasi"
+            app:layout_constraintBottom_toBottomOf="@id/lokasi"
+
+            />
+
+        <TextView
+            android:id="@+id/lokasi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Jakarta"
+            android:textSize="9sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/namavendor"
+            app:layout_constraintTop_toTopOf="@+id/namavendor"
             />
 
         <TextView
@@ -53,14 +84,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rp25.000.0000"
-            android:textSize="9sp"
+            android:textSize="13sp"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/namavendor"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp"
+            android:layout_marginTop="4.54dp"
+            android:layout_marginBottom="5dp"
             />
 
 

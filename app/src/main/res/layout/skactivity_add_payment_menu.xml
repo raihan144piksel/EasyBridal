@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".skAddPaymentMenu"
+    android:background="#FAFAFB"
+    >
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/baseline_keyboard_arrow_left_24"
+        android:layout_marginStart="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/judului"
+        app:layout_constraintBottom_toBottomOf="@id/judului"
+        app:tint="@color/coklat"
+        />
+
+    <TextView
+        android:id="@+id/judului"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Payment"
+        android:textSize="24sp"
+        android:layout_marginStart="45.33dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/back"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/logometodebayar"
+        android:layout_width="144dp"
+        android:layout_height="138dp"
+        app:srcCompat="@drawable/logos_mastercard"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judului"
+        />
+
+    <EditText
+        android:id="@+id/namakartu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="Cardholder Name"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        android:background="@drawable/bgwhitestroke"
+        android:layout_marginTop="30.96dp"
+        android:layout_marginHorizontal="53dp"
+        android:paddingVertical="0dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/logometodebayar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/nomorkartu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="Card Number"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        android:background="@drawable/bgwhitestroke"
+        android:layout_marginTop="9dp"
+        android:layout_marginHorizontal="53dp"
+        android:paddingVertical="0dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/namakartu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/tanggalexpire"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:hint="Expiry Date"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        android:background="@drawable/bgwhitestroke"
+        android:layout_marginTop="9dp"
+        android:paddingVertical="0dp"
+        android:gravity="center"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintTop_toBottomOf="@id/nomorkartu"
+        app:layout_constraintStart_toStartOf="@id/nomorkartu"
+        app:layout_constraintEnd_toStartOf="@id/kodesecurity"
+        />
+
+    <EditText
+        android:id="@+id/kodesecurity"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:hint="Security Code"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        android:background="@drawable/bgwhitestroke"
+        android:layout_marginTop="9dp"
+        android:paddingVertical="0dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/nomorkartu"
+        app:layout_constraintStart_toEndOf="@id/tanggalexpire"
+        app:layout_constraintEnd_toEndOf="@id/nomorkartu"
+        />
+
+    <EditText
+        android:id="@+id/kodepost"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:hint="Postal Code"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        android:background="@drawable/bgwhitestroke"
+        android:layout_marginTop="9dp"
+        android:paddingVertical="0dp"
+        android:gravity="center"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintTop_toBottomOf="@id/tanggalexpire"
+        app:layout_constraintStart_toStartOf="@id/nomorkartu"
+        app:layout_constraintEnd_toStartOf="@id/negara"
+        />
+
+    <EditText
+        android:id="@+id/negara"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:hint="Country"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        android:background="@drawable/bgwhitestroke"
+        android:layout_marginTop="9dp"
+        android:paddingVertical="0dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/kodesecurity"
+        app:layout_constraintStart_toEndOf="@id/kodepost"
+        app:layout_constraintEnd_toEndOf="@id/nomorkartu"
+        />
+
+
+    <Button
+        android:id="@+id/tombolkonfirmasi"
+        android:layout_width="327dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#FFD600"
+        android:text="Confirm"
+        android:textSize="16sp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
